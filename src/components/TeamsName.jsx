@@ -9,7 +9,7 @@ function TeamsName({ matchData }) {
           src="https://cdn.fantasyiteam.com/bethub/teams/150x150/4dsgumo7d4zupm2ugsvm4zm4d.png"
           alt=""
         />
-        <p>{matchData.match?.contestant[0]?.name}</p>
+        <p className="my-3">{matchData.match?.contestant[0]?.name}</p>
         <MatchResults matchResult={matchData.match?.form?.home} />
       </section>
       <section className="text-center font-semibold">
@@ -18,7 +18,7 @@ function TeamsName({ matchData }) {
           src="https://cdn.fantasyiteam.com/bethub/teams/150x150/hzqh7z0mdl3v7gwete66syxp.png"
           alt=""
         />
-        <p>{matchData.match?.contestant[1]?.name}</p>
+        <p className="my-3">{matchData.match?.contestant[1]?.name}</p>
         <MatchResults matchResult={matchData.match?.form?.away} />
       </section>
     </section>
