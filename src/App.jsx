@@ -1,11 +1,8 @@
 import "./App.css";
+import Match from "./components/Match";
 
 function App() {
-  return (
-    <>
-      <h1>Checkd Group Front End Task</h1>
-    </>
-  );
+  return <Match />;
 }
 
 export default App;
