@@ -66,7 +66,7 @@ function MatchStats({ matchData }) {
     parseInt(matchData?.match?.liveData?.lineups?.away?.stats[2].sh) +
     parseInt(matchData?.match?.liveData?.lineups?.away?.stats[2].fh);
 
-  const [statsData, setStatsData] = useState(firstHalf);
+  const [statsData, setStatsData] = useState(fullHalf);
   const [firstOrSecond, setFirstOrSecond] = useState("");
   const statsHandler = (e) => {
     let fullFirstHalfTime = e.target.getAttribute("value");
