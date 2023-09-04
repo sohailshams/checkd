@@ -13,7 +13,8 @@ function Match() {
   useEffect(() => {
     getMatchData()
       .then((response) => response.json())
-      .then((body) => setMatchData(body));
+      .then((body) => setMatchData(body))
+      .catch((e) => alert("There is an error, please check api url!"));
   }, []);
 
   const onClickHandler = (e) => {
